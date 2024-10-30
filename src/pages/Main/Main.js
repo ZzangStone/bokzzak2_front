@@ -1,11 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import ContentContainer from "./ContentContainer";
+import TitleContainer from "./TitleContainer";
+import { PiList } from "react-icons/pi";
 
 const Main = () => {
   return (
     <MainContainer>
-      <TitleContainer></TitleContainer>
-      <ContentContainer></ContentContainer>
+      <IconContainer>
+        <PiList />
+      </IconContainer>
+      <TitleContainer />
+      <ContentContainer />
     </MainContainer>
   );
 };
@@ -17,16 +23,8 @@ const MainContainer = styled.div`
   height: 100vh;
   overflow: hidden;
 `;
-
-const TitleContainer = styled.div`
-  flex: 1;
+const IconContainer = styled.div`
   background-color: ${({ theme }) => theme.color.background};
-  width: 100vw;
+  padding: 10px;
 `;
-
-const ContentContainer = styled.div`
-  flex: 1;
-  width: 100vw;
-`;
-
 export default Main;
