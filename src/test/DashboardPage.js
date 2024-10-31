@@ -1,7 +1,7 @@
 import React from "react";
-import Sidebar from "../components/Dashboard/Sidebar";
-import Dashboard from "../components/Dashboard/Dashboard";
-import Map from "../components/Dashboard/Map";
+import Sidebar from "./Dashboard/Sidebar";
+import Dashboard from "./Dashboard/Dashboard";
+import Map from "./Dashboard/Map";
 
 function DashboardPage() {
   return (
